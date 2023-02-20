@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
+/**
 * main - entry point and it prints sizes of operators
+*
 * Return: always 0 (success)
 */
 int main(void)
