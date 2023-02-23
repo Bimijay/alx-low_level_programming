@@ -1,32 +1,28 @@
-#include "main.h"
+#include"main.h"
 /**
- * main - check the code.
+ *print_sign - function to check n
+ *@n: parameter to be printed
  *
- * Return: Always 0.
+ *Return: 1 if n is greater than zero
+ *Returns 0 if n is zero
+ *and returns -1 if n is less than zero
  */
-int main(void)
+int print_sign(int n)
 {
-	int r;
-
-	r = print_sign(98);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
+	if (n > 0)
+	{
+		_putchar(43);
+		return (1);
+	}
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
+		return (0);
+	}
 	_putchar('\n');
-	r = print_sign(0);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(0xff);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(-1);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
 }
