@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
-{
-	char *str;
+ * _puts - write a function that prints a string, followed by a new line
+ * @str: this is my input sting
+ */
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	_puts(str);
-	return (0);
+void _puts(char *str)
+{
+	int index;
+
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		_putchar(str[index]);
+	}
+	_putchar('\n');
 }
