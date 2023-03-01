@@ -1,17 +1,16 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _puts - write a function that prints a string, followed by a new line
- * @str: this is my input sting
+ * _puts - function that prints a string, followed by a new line
+ * @str: declaration of *str and paramters for the function _puts
+ * Return: Always 0.
  */
-
 void _puts(char *str)
 {
-	int index;
+	int c;
 
-	for (index = 0; str[index] != '\0'; index++)
+	for (c = 0; str[c] != 0; c++)
 	{
-		_putchar(str[index]);
+		_putchar(str[c]);
 	}
 	_putchar('\n');
 }
